@@ -122,17 +122,17 @@ This new DataFrame should show school performance based on the "School Type".
 # Note
 Initial steps carried out prior to coding are:
   1. Dependencies and Setup
-      `import pandas as pd`
+      `import pandas as pd`;
       `from pathlib import Path`
-  2. File to Load 
-      school_data_to_load = Path("Resources/schools_complete.csv")
-      student_data_to_load = Path("Resources/students_complete.csv")
-  3. Read School and Student Data File and store into Pandas DataFrames
-      school_data = pd.read_csv(school_data_to_load)
-      student_data = pd.read_csv(student_data_to_load)
-  4. Combine the data into a single dataset.  
-      school_data_complete = pd.merge(student_data, school_data, how="left", on=["school_name", "school_name"])
-      school_data_complete.head()
+  2. Files to Load:
+      `school_data_to_load = Path("Resources/schools_complete.csv")`;
+      `student_data_to_load = Path("Resources/students_complete.csv")`
+  3. Read School and Student Data File and store into Pandas DataFrames:
+      `school_data = pd.read_csv(school_data_to_load)`;
+      `student_data = pd.read_csv(student_data_to_load)`
+  4. Combine the data into a single dataset:  
+      `school_data_complete = pd.merge(student_data, school_data, how="left", on=["school_name", "school_name"])`; and display the dataset
+      `school_data_complete.head()`
 
 ![1](https://github.com/Pooja14n/matplotlib-challenge/assets/144713762/c9f5c3c8-fff7-4a9a-a11d-07e16111ecca)
 
